@@ -1,0 +1,31 @@
+.timeline-element{
+    width: 70%;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-left: 2px black solid;
+    margin-bottom: 20px;
+}
+
+
+.timeline-header{
+    margin-bottom: 10px;
+}
+
+.yellow-hr{
+    border:0px transparent solid ;
+    height: 2px;
+    
+    background-color: #e3cd00;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.timeline-period{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-description-p{
+    font-weight: 300;
+}

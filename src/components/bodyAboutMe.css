@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-splitter{
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+
+}
+
+.col-container{
+    
+    
+    display: block;
+    
+    width: 45%;
+    min-width: 200px;
+}
+
+.AboutMeDescription{
+    padding: 4px;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.row-container{
+  display: flex;
+  flex-direction: column;
+ 
+
+
+}
+
+.h-aboutme{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.bio-row-title{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.bio-row{
+    margin-bottom: 10px;
+    display: flex;
+   /* border: 1px solid red !important;*/
+    flex-wrap: wrap;
+    
+
+}
+.bio-label{
+        padding: 1px;
+        
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+}
+
+.bio-col-content{
+    padding: 1px;
+  /*  border: 1px yellow solid !important;*/
+    width: 300px;
+   
+}
+
+@media screen and (max-width: 800px){
+    .col-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .bio-col-content{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .AboutMeDescription{
+        font-size: 0.8em;
+
+    }
+}

@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bg-image-body-container{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    filter: grayscale(100%) blur(2px)
+}
+
+.profile-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.myPhoto{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    justify-content: space-between;
+    opacity: 100%;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    transition: 0.4s;
+    -webkit-box-shadow: 3px 1px 38px -3px rgba(252,252,252,0.3);
+-moz-box-shadow: 3px 1px 38px -3px rgba(252,252,252,0.3);
+box-shadow: 3px 1px 38px -3px rgba(252,252,252,0.3);
+
+}
+
+.myPhoto:hover{
+    height: 300px;
+    width: 300px;
+    transition: 0.4s;
+    border: 2px solid #eddd50;
+    -webkit-box-shadow: 3px 1px 38px -3px #eddd50;
+-moz-box-shadow: 3px 1px 38px -3px #eddd50;
+box-shadow: 3px 1px 38px -3px #eddd50;
+
+}
+
+
+.profile-name{
+text-align: center;
+font-weight: 600;
+color:#e3cd00 ;
+font-size: 2.5em;
+text-shadow: 6px 1px 15px rgba(227, 205, 0, 0.18);
+}
+
+.sub-name-hr{
+    margin: 4px;
+    color: white;
+    min-width: 200px;
+    width: 80%;
+    max-width:350px ;
+}
+
+.role{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.link-container{
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 400px){
+
+    .role{
+        font-size: 0.8em;
+    }
+    .profile-name{
+        font-size: 2em;
+    }
+
+    .myPhoto{
+        width: 150px;
+        height: 150px;
+    }
+}
